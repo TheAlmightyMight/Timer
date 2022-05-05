@@ -1,0 +1,108 @@
+$font-color: hsl(200, 15%, 8%);
+$elements-color:hsl(0, 0%, 52%);
+$bg-color:hsl(0, 0%, 98%);
+$btn:hsla(240, 100%, 30%, 1);
+$font:'Poppins', sans-serif;
+
+body{
+    height:100vh;
+    background-color:$bg-color;
+    color:$font-color;
+    font-family: $font;
+    overflow:hidden;
+}
+
+.container{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer{
+    width:800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.timer-cards {
+    margin-bottom: 2em;
+    display:flex;
+}
+
+.card-item {
+    display: grid;
+    place-items:center;
+    width:150px;
+    height:200px;
+    padding:1em;
+    margin:1em;
+    border-radius:30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-style:normal;
+    background-color:$elements-color;
+    &:hover{
+        transform:translateY(-15px);
+        transition:0.2s linear;
+    }
+}
+
+.btn{
+    width:65px;
+    height:32.5px;
+    font-size:0.8em;
+    font-family:$font;
+    border:2px solid $btn;
+    border-radius:30px;
+    background:transparent;
+    margin-right: 10px;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.2s linear;
+    }
+
+    &:last-of-type{
+        margin-right:0;
+    }
+
+}
+
+.timer-record {
+    margin-top:2em;
+    position: relative;
+    &::after{
+        text-align: center;
+        content: "Your previous attempt";
+        width: 130px;
+        font-size:0.8em;
+        position:absolute;
+        top:40px;
+        left:0;
+    }
+}
+.record-info {
+    font-size: 1.5em;
+}
+
+.card-text1{
+    color:hsla(0, 100%, 50%, 1);
+    font-size:2em;
+}
+
+.card-text2{
+    color:hsla(106, 100%, 50%, 1);
+    font-size:2em;
+}
+
+.card-text3{
+    color:hsla(186, 100%, 50%, 1);
+    font-size:2em;
+}
+
+.card-text4{
+    color:hsla(50, 100%, 50%, 1);
+    font-size:2em;
+}
+
