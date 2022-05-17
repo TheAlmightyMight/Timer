@@ -72,9 +72,3 @@ function output(){
 function timer (){
     time = setInterval(output, 10);
 }
-
-
-
-
-
-
