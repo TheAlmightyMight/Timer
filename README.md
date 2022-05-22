@@ -1,5 +1,5 @@
 # Timer.
 
-This App is a timer that provides a user with functionality of measuring time by miliseconds, seconds, minutes, hours. 
+This App is a timer that provides a user with functionality of measuring time by miliseconds, seconds, minute and hours. 
 
-There is also feature that allows to set a record for whatever action you need information for which will be stored in local storage.
+There is also a feature that allows to set a record information of which will be stored in local storage.
